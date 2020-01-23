@@ -77,12 +77,13 @@ body {
 </head>
 <body onload="ok()">
 
-<p id="demo">Snart är det sportlov!</p>
+<p id="demo"></p>
 <div id="overlay"><img src="https://raw.githubusercontent.com/en-programmerare/sportlovsnedraknaren/master/SKID%C3%85KARE.png"></img></div>
 <!--<div id="overlay2"><img src="http://www.elisanet.fi/bertta.bergroth/Joulu/Kuvitus/Sekalaiset/Toivotus.gif" width=832 height=404></img></div>-->
 <script>
 // Set the date we're counting down to
 function ok() {
+document.getElementById("demo").innerHTML = "Snart är det sportlov!";
 var countDownDate = new Date("Feb 21, 2020 14:00:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
